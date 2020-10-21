@@ -39,7 +39,8 @@
     "test:watch": "jest --coverage --watch",
     "test:prod": "yarn test -- --no-cache",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "postinstall": "yarn build"
   },
   "devDependencies": {
     "@types/clone": "^0.1.30",
